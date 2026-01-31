@@ -16,7 +16,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <nav class="bg-green-100 p-3 flex items-center  justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg class="w-5 h-5 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        <svg id="menuicon" class="w-5 h-5 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -34,6 +34,25 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </li>
         </ul>
     </nav>
+    <!-- Side navbar -->
+
+    <section id="sidenavbar" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600   items-center ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- header section -->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center ">
         <diV>
@@ -156,11 +175,15 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <button class="bg-black text-white p-2 m-3 underline">Subscribe</button>
     </section>
     <!-- footer -->
-     <section class="bg-green-100 p-10 flex flex-col gap-5">
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
         <h1 class="text-4xl font-bold">Greenden</h1>
         <p>the standerd chunk ipsum used since the 1500s is reprodused below for those interest</p>
         <p class="mt-5">&copy;greenday.com</p>
-     </section>
+    </section>
+
+    <script src="index.js">
+
+    </script>
 </body>
 
 </html>
